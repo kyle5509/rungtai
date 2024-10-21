@@ -1,0 +1,1 @@
+export const FilterTitleStyle = "font-semibold text-base"
