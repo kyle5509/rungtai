@@ -45,8 +45,7 @@ export const cartTotalQty = (state: any) => {
   return state.cart.cart.reduce((total, item) => total + item.quantity , 0);
 };
 export const cartSum = (state: any) => {
-  const sum = state.cart.cart.reduce((total: number, item: any) => total + (item.quantity * item.price * 1700), 0);
-  return sum.toLocaleString()
+  return state.cart.cart.reduce((total: number, item: any) => total + (item.quantity * item.price * 1700), 0).toLocaleString();
 };
 
 export const { addToCart, removeFromCart, updateQuantity } = CartSlice.actions;
